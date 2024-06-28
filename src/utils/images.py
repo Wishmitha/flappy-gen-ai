@@ -37,11 +37,11 @@ class Images:
 
     def randomize(self):
         # select random background sprites
-        rand_bg = random.randint(0, len(BACKGROUNDS) - 1)
+        rand_bg = 0
         # select random player sprites
-        rand_player = random.randint(0, len(PLAYERS) - 1)
+        rand_player = 0
         # select random pipe sprites
-        rand_pipe = random.randint(0, len(PIPES) - 1)
+        rand_pipe = 0
 
         self.background = pygame.image.load(BACKGROUNDS[rand_bg]).convert()
         self.player = (
